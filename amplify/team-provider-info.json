@@ -10,6 +10,11 @@
       "StackName": "amplify-nextgooglecognito2-main-115843",
       "StackId": "arn:aws:cloudformation:eu-west-1:791385305479:stack/amplify-nextgooglecognito2-main-115843/e30bb130-000a-11ec-95ce-0a2520d5a4a1",
       "AmplifyAppId": "dneqn0vodp1do"
+    },
+    "categories": {
+      "auth": {
+        "nextgooglecognito273ee6a9473ee6a94": {}
+      }
     }
   }
 }
