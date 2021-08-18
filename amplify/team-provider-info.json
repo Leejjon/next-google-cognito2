@@ -1,0 +1,15 @@
+{
+  "main": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nextgooglecognito2-main-115843-authRole",
+      "UnauthRoleArn": "arn:aws:iam::791385305479:role/amplify-nextgooglecognito2-main-115843-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::791385305479:role/amplify-nextgooglecognito2-main-115843-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-nextgooglecognito2-main-115843-deployment",
+      "UnauthRoleName": "amplify-nextgooglecognito2-main-115843-unauthRole",
+      "StackName": "amplify-nextgooglecognito2-main-115843",
+      "StackId": "arn:aws:cloudformation:eu-west-1:791385305479:stack/amplify-nextgooglecognito2-main-115843/e30bb130-000a-11ec-95ce-0a2520d5a4a1",
+      "AmplifyAppId": "dneqn0vodp1do"
+    }
+  }
+}
