@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import Amplify, { Auth } from 'aws-amplify';
 import awsconfig from '../aws-exports';
 
-const isLocalhost = true;
+const isLocalhost = false;
 
 const [
   localRedirectSignIn,
