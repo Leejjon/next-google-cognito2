@@ -4,7 +4,7 @@ import {Component} from "react";
 Amplify.configure(awsconfig);
 
 class App extends Component {
-  state = { user: null, customState: null };
+  state = { user: { getUsername: () => { return "Not logged in"}}, customState: null };
 
   componentDidMount() {
     Hub.listen("auth", ({ payload: { event, data } }) => {
