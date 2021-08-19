@@ -4,7 +4,7 @@ import {Component} from "react";
 Amplify.configure(awsconfig);
 
 class App extends Component {
-  state = { user: { getUsername: function() { return "Leon"}}, customState: null };
+  state = { user: null, customState: null };
 
   componentDidMount() {
     Hub.listen("auth", ({ payload: { event, data } }) => {
@@ -33,10 +33,19 @@ class App extends Component {
           <button onClick={() => Auth.federatedSignIn({provider: 'Facebook'})}>Open Facebook</button>
           <button onClick={() => Auth.federatedSignIn({provider: 'Google'})}>Open Google</button>
           <button onClick={() => Auth.federatedSignIn()}>Open Hosted UI</button>
-          <button onClick={() => Auth.signOut()}>Sign Out {user.getUsername()}</button>
+          <SignOutButton user={user} />
+
         </div>
     );
   }
+}
+
+const SignOutButton = (props) => {
+    if (props.user) {
+       return (<button onClick={() => Auth.signOut()}>Sign Out {user.getUsername()}</button>);
+    } else {
+       return (<div>Not logged in</div>);
+    }
 }
 
 export default App;

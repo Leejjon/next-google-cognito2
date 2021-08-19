@@ -14,15 +14,15 @@ const [
   productionRedirectSignOut,
 ] = awsconfig.oauth.redirectSignOut.split(",");
 
-const updatedAwsConfig = awsconfig;
-// const updatedAwsConfig = {
-//   ...awsconfig,
-//   oauth: {
-//     ...awsconfig.oauth,
-//     redirectSignIn: isLocalhost ? localRedirectSignIn : productionRedirectSignIn,
-//     redirectSignOut: isLocalhost ? localRedirectSignOut : productionRedirectSignOut,
-//   }
-// }
+// const updatedAwsConfig = awsconfig;
+const updatedAwsConfig = {
+  ...awsconfig,
+  oauth: {
+    ...awsconfig.oauth,
+    redirectSignIn: isLocalhost ? localRedirectSignIn : productionRedirectSignIn,
+    redirectSignOut: isLocalhost ? localRedirectSignOut : productionRedirectSignOut,
+  }
+}
 
 console.log(JSON.stringify(updatedAwsConfig.oauth))
 
