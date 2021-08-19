@@ -42,7 +42,7 @@ class App extends Component {
 
 const SignOutButton = (props) => {
     if (props.user) {
-       return (<button onClick={() => Auth.signOut()}>Sign Out {user.getUsername()}</button>);
+       return (<button onClick={() => Auth.signOut()}>Sign Out {props.user.getUsername()}</button>);
     } else {
        return (<div>Not logged in</div>);
     }
